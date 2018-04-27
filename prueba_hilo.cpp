@@ -1,7 +1,7 @@
 #include <iostream>
 #include <thread>
-//#include <chrono>
-#include <unistd.h>
+#include <chrono>
+//#include <unistd.h>
 
 using namespace std;
 
@@ -13,8 +13,8 @@ void prue1()
     while(1)
     {
         n++;
-        //std::this_thread::sleep_for(std::chrono::seconds(3));
-        sleep(segs);
+        std::this_thread::sleep_for(std::chrono::seconds(segs));
+        //sleep(segs);
         cout << "ejecucion prue1 " << n << endl;
     }
     cout << "finalizando prue1" << endl;
@@ -29,8 +29,8 @@ void prue2()
     while(1)
     {
         n++;
-        //std::this_thread::sleep_for(std::chrono::seconds(3));
-        sleep(segs);
+        std::this_thread::sleep_for(std::chrono::seconds(segs));
+        //sleep(segs);
         cout << "ejecucion prue2 " << n << endl;
     }
     cout << "finalizando prue2" << endl;
@@ -53,8 +53,8 @@ int main()
     while(1)
     {
         n++;
-        //std::this_thread::sleep_for(std::chrono::seconds(3));
-        sleep(segs);
+        std::this_thread::sleep_for(std::chrono::seconds(segs));
+        //sleep(segs);
         cout << "ejecucion main " << n << endl;
     }
     cout << "finalizando main" << endl;
